@@ -5,6 +5,7 @@ import './App.css'
 // import LandingPage from './landing/Landingpage'
 // import Navbar from './mylanding/Navbar'
 import Hero from './mylanding/Hero'
+import { Routes, Route } from "react-router-dom";
 import FirstSection from './mylanding/FirstSection'
 import SecondSec from './mylanding/SecondSec'
 import Navbar from './piggyclone/Navbar'
@@ -19,16 +20,24 @@ import SectwoB from './Boltclone/SectwoB'
 import Map from './Boltclone/Map'
 import SecThree from './Boltclone/SecThree'
 import LastSec from './Boltclone/LastSec'
+import HomePage from './Musica/Homepage'
+import Sidebar from './Musica/Sidebar'
+import Album from './Musica/Album'
+import Collections from './Musica/Collections'
+
+
 
 function App() {
 
 
   return (
     <div className='app'>
-          <Navbar/>
+          {/* <Navbar/>
           <Hero/>
           <FirstSection/>
-          <SecondSec/>
+          <SecondSec/> */}
+
+
           {/* <LandingPage/> */}
 
           {/* <Navbar/>
@@ -45,6 +54,16 @@ function App() {
           <SecThree/>
           <LastSec/> */}
           
+          {/* <Sidebar/> */}
+          <Routes>
+            <Route>
+            <Route path="/" element={<HomePage/>} />
+          <Route path="/album" element={<Album/>} />
+          <Route path= "/collection" element={<Collections/>} />
+            </Route>
+          </Routes>
+
+
 
     </div>
   )

@@ -11,7 +11,9 @@ export default {
       backgroundImage: {
         'hero': "url('/src/assets/Boltassets/BoltHero.jpg');",
         'heroTwo':"url(https://monoassets.com/f/118499/1080x1280/f73f641e15/directpay.jpg)",
-        'heroThr':"url(https://monoassets.com/f/118499/1080x1280/f5a17c8f24/percept.png)"
+        'heroThr':"url(https://monoassets.com/f/118499/1080x1280/f5a17c8f24/percept.png)",
+        'bgg' : "url('/src/assets/Boltassets/Rectangle.png')",
+        'albbg' : "url('/src/assets/Boltassets/Lead.png')"
       },
 
       fontFamily: {
